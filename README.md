@@ -1,5 +1,5 @@
 <h1 align="center">
-  <img src=".github/logo.png" alt="Be The Hero API" width="200px"><br>
+  <img src=".github/logo.png" alt="Be The Hero Web App" width="200px"><br>
   Be The Hero - Web App
 </h1>
 
@@ -44,12 +44,14 @@ The UI for this app was provided by Rocketseat and is available at [Figma](http:
 - Axios
 
 ### Requirements
-  - Node v12+
-  - Npm 6+
+- Node v12+
+- Npm 6+
+- [Be the Hero API](https://github.com/alande-amorim/be-the-hero-backend)
 
 ### Download & Installation
 
-Clone this repo, install and migrate the database.
+
+Clone and install this repository.
 
 ```bash
 $ git clone https://github.com/alande-amorim/be-the-hero-web.git
@@ -58,8 +60,14 @@ $ npm install
 ```
 
 ### Running
-You can now run the app:
+
+In order to run this web app you'll need a running instance of the [API](https://github.com/alande-amorim/be-the-hero-backend). If you haven't done it yet, do it now and come back.
+
+This app is setup to reach the API on `http://localhost:3333`. If for any reason your server is running on a different host/port, you need to adjust. Edit the file `src/services/api.js` to meet your needs.
+
+While the backend node process is running, you can now launch the app:
 ```bash
 $ npm start
 ```
-This will automatically open the web app on a browser tab. In case the app is not launched, access http://localhost:3000.
+This will automatically open the web app in development mode on a web browser tab.
+In case the app is not launched, access `http://localhost:3000` on a browser tab.
